@@ -15,11 +15,17 @@ using namespace std;
 int main()
 {
     int number1, number2, guess, sum;
+    int n = 0;
+
+    cout << "enter the range number to generated" << endl;
+    cin >> n;
+
     srand(time(0));
-    number1 = rand();
-    number2 = rand();
-    //cout<<number1<<" "<<number2<<endl; 
+
+    number1 = rand() % n;
+    number2 = rand() % n;
     sum = number1 + number2;
+    
     for (int start = 0; start < 10; start++)
     {
         cout << "guess the sum of numbers generated" << endl;
