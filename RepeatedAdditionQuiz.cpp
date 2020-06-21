@@ -17,7 +17,7 @@ int main()
     int number1, number2, guess, sum;
     int n = 0;
 
-    cout << "enter the range number to generated" << endl;
+    cout << "enter the range of numbers to be generated" << endl;
     cin >> n;
 
     srand(time(0));
@@ -25,10 +25,11 @@ int main()
     number1 = rand() % n;
     number2 = rand() % n;
     sum = number1 + number2;
-    
-    for (int start = 0; start < 10; start++)
+
+    for ( ; ;)
     {
-        cout << "guess the sum of numbers generated" << endl;
+
+        cout << "guess the sum of numbers to be generated" << endl;
         cin >> guess;
 
         if (guess == sum)
